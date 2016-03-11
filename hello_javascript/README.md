@@ -35,6 +35,7 @@ Consider the below code:
 ```
 Before anything gets executed in the above code
 we already have somethings, which are:  
+
 1. A function called 'Object' (capital 'O')
 2. An object which does not have any name, but a
   label named 'Object.prototype'.
