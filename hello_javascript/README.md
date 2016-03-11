@@ -34,9 +34,9 @@ Consider the below code:
   a1.__proto__ === a2.__proto__;
 ```
 Before anything gets executed in the above code
-we already have somethings, which are:
+we already have somethings, which are:  
 1. A function called 'Object' (capital 'O')
 2. An object which does not have any name, but a
   label named 'Object.prototype'.
-  
-![View Image](http://imgur.com/To1zgcG)
+
+[View Image!](images/object_in_js.png)
