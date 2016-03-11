@@ -40,4 +40,4 @@ we already have somethings, which are:
 2. An object which does not have any name, but a
   label named 'Object.prototype'.
 
-[View Image!](images/object_in_js.png)
+![View Image](images/object_in_js.png)
