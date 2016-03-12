@@ -49,8 +49,9 @@ When the first line of above code gets executed following things happen:
 * It's also going to create an "object" that we are linked to, and it will
    have an arbitrary linkage named: "_.prototype_".
    ![View Image](images/object_in_js_foo.png)  
-   
+
 >    Foo func -------".prototype"-------> unnamed object
+
 * Also the _unnamed object_ gets linked to the
    unnamed object of the 'Object' function and this
    linkage is labeled as '__[[Prototype]]__'.
