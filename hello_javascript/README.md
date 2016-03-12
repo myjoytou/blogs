@@ -44,13 +44,12 @@ The "Object" function has been linked to the object which does not
 have any name. On the unnamed object, we have functions  
 like "toString" and several values which are built in the language.
 
-When the first line of above code gets executed following things happen:
+When the first line of above code gets executed following things happen:  
 + We will have a function called "Foo".
 + It's also going to create an "object" that we are linked to, and it will
    have an arbitrary linkage named: "_.prototype_".
-   ![View Image](images/object_in_js_foo.png)
+   ![View Image](images/object_in_js_foo.png)  
    >Foo func -------".prototype"-------> unnamed object
-
 + Also the _unnamed object_ gets linked to the
    unnamed object of the 'Object' function and this
    linkage is labeled as '__[[Prototype]]__'.
@@ -59,7 +58,7 @@ When the first line of above code gets executed following things happen:
    also a connection in the opposite direction.
    The _unnamed_ object has a property on the "function"
    called "_.constructor_".
-   ![View Image](images/object_in_js_const.png)
+   ![View Image](images/object_in_js_const.png)  
    >Foo function <------".constructor"---- unnamed object
 
 Most people think the '_.constructor_' means is
@@ -74,13 +73,13 @@ So there is a "two-way" linkage.
 
 Now, when the code "**var a1 = new Foo('a1')**" gets executed
 we will have following things:  
-1. A brand new object will gets created.
-2. The object gets linked to another object.
++ A brand new object will gets created.
++ The object gets linked to another object.
    (so the newly created object will get linked to the "unnamed object.")
-3. The contex gets set to the '**this**'. So the newly
-   created object will have a property called 'me',
-   which will have the value 'a1'.
-4. We return '**this**', which gets assigned to the variable 'a1' in 
++ The contex gets set to the '**this**'. So the newly
+    created object will have a property called 'me',
+    which will have the value 'a1'.
++ We return '**this**', which gets assigned to the variable 'a1' in 
    the code. So now the name of the newly created object will 
    be 'a1'. 
    ![View Image](images/object_in_js_new.png)
