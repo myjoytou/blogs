@@ -37,8 +37,9 @@ Before anything gets executed in the above code
 we already have somethings, which are:  
 
 1. A function called 'Object' (capital 'O')
+
 2. An object which does not have any name, but a
-  label named 'Object.prototype'.
+  label named '.prototype'.
 
 ![View Image](images/object_in_js.png)
 
@@ -48,9 +49,11 @@ the language.
 
 When the first line of above code gets executed following things happen:  
 1. we will have a function called "Foo"
+
 2. its also going to create an "object" that 
   we are linked to, and it will have an 
   arbitrary linkage named: "_.prototype_".  
+
 ![View Image](images/object_in_js_foo.png)
   >Foo func -------".prototype"-------> unnamed object
 
@@ -79,12 +82,15 @@ When the first line of above code gets executed following things happen:
 Now, when the code "**var a1 = new Foo('a1')**" gets executed
 we will have following things:  
 1. A brand new object will gets created.
+
 2. The object gets linked to another object.
   (so the newly created object will get linked
     to the "unnamed object.")
+
 3. The contex gets set to the '**this**'. So the newly
   created object will have a property called 'me',
   which will have the value 'a1'.
+  
 4. We return '**this**', which gets assigned to the 
   variable 'a1' in the code.
   So now the name of the newly created object will 
