@@ -38,8 +38,7 @@ we already have somethings, which are:
 
 1. A function called 'Object' (capital 'O')
 
-2. An object which does not have any name, but a
-  label named '.prototype'.
+2. An object which does not have any name, but a label named '.prototype'.
 
 ![View Image](images/object_in_js.png)
 
@@ -49,53 +48,44 @@ the language.
 
 When the first line of above code gets executed following things happen:  
 1. we will have a function called "Foo"
+2. It's also going to create an "object" that we are linked to, and it will 
+   have an arbitrary linkage named: "_.prototype_".
+   ![View Image](images/object_in_js_foo.png)
+   >Foo func -------".prototype"-------> unnamed object
 
-2. its also going to create an "object" that 
-  we are linked to, and it will have an 
-  arbitrary linkage named: "_.prototype_".  
-
-![View Image](images/object_in_js_foo.png)
-  >Foo func -------".prototype"-------> unnamed object
-
-  Also the _unnamed object_ gets linked to the 
-  unnamed object of the 'Object' function and this
-  linkage is labeled as '__[[Prototype]]__'.
-![Veiw Image](images/object_in_js_Object.png)
-
+   Also the _unnamed object_ gets linked to the
+   unnamed object of the 'Object' function and this
+   linkage is labeled as '__[[Prototype]]__'.
+   ![Veiw Image](images/object_in_js_Object.png)
 3. In addition to the above connection, there is 
-  also a connection in the opposite direction.
-  The _unnamed_ object has a property on the "function"
-  called "_.constructor_".
-![View Image](images/object_in_js_const.png)
-  >Foo function <------".constructor"---- unnamed object
+   also a connection in the opposite direction.
+   The _unnamed_ object has a property on the "function"
+   called "_.constructor_".
+   ![View Image](images/object_in_js_const.png)
+   >Foo function <------".constructor"---- unnamed object
 
-  Most people think the '_.constructor_' means is
-  constructed by. In other words the unnamed object 
-  is constructed by the "function".
-  "But its not true".
+Most people think the '_.constructor_' means is
+constructed by. In other words the unnamed object 
+is constructed by the "function".
+"But its not true".
 
-  The word '_constructor_' is an __arbitrary__ word
-  it could have been any other __random word__.
+The word '_constructor_' is an __arbitrary__ word
+it could have been any other __random word__.
 
-  So there is a "two-way" linkage.  
+So there is a "two-way" linkage.  
 
 Now, when the code "**var a1 = new Foo('a1')**" gets executed
 we will have following things:  
 1. A brand new object will gets created.
-
 2. The object gets linked to another object.
-  (so the newly created object will get linked
-    to the "unnamed object.")
-
+   (so the newly created object will get linked to the "unnamed object.")
 3. The contex gets set to the '**this**'. So the newly
-  created object will have a property called 'me',
-  which will have the value 'a1'.
-  
-4. We return '**this**', which gets assigned to the 
-  variable 'a1' in the code.
-  So now the name of the newly created object will 
-  be 'a1'. 
-![View Image](images/object_in_js_new.png)
+   created object will have a property called 'me',
+   which will have the value 'a1'.
+4. We return '**this**', which gets assigned to the variable 'a1' in 
+   the code. So now the name of the newly created object will 
+   be 'a1'. 
+   ![View Image](images/object_in_js_new.png)
 
 So when we execute '**a1.\_\_proto\_\_ === Foo.prototype**' 
 it will check whether 'a1' have a '\_\_proto\_\_' property.
