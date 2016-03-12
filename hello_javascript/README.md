@@ -35,8 +35,8 @@ Consider the below code:
 ```
 Before anything gets executed in the above code
 we already have somethings, which are:  
-1. A function called 'Object' (capital 'O').
-2. An object which does not have any name, but a label  
++ A function called 'Object' (capital 'O').
++ An object which does not have any name, but a label  
    named '.prototype'.  
   ![View Image](images/object_in_js.png)
 
@@ -45,8 +45,8 @@ have any name. On the unnamed object, we have functions
 like "toString" and several values which are built in the language.
 
 When the first line of above code gets executed following things happen:  
-1. we will have a function called "Foo".
-2. It's also going to create an "object" that we are linked to, and it will  
++ we will have a function called "Foo".
++ It's also going to create an "object" that we are linked to, and it will  
    have an arbitrary linkage named: "_.prototype_".  
    ![View Image](images/object_in_js_foo.png)  
    >Foo func -------".prototype"-------> unnamed object
