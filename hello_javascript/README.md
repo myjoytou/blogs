@@ -40,8 +40,8 @@ we already have somethings, which are:
    named '.prototype'.  
    ![View Image](images/object_in_js.png)
 
-The "Object" function has been linked to the object which does not  
-have any name. On the unnamed object, we have functions  
+The "Object" function has been linked to the object which does not
+have any name. On the unnamed object, we have functions
 like "toString" and several values which are built in the language.
 
 When the first line of above code gets executed following things happen:  
@@ -50,7 +50,7 @@ When the first line of above code gets executed following things happen:
    have an arbitrary linkage named: "_.prototype_".
    ![View Image](images/object_in_js_foo.png)  
 
->    Foo func -------".prototype"-------> unnamed object
+    >    Foo func -------".prototype"-------> unnamed object
 
 * Also the _unnamed object_ gets linked to the
    unnamed object of the 'Object' function and this
@@ -62,7 +62,7 @@ When the first line of above code gets executed following things happen:
    called "_.constructor_".
    ![View Image](images/object_in_js_const.png) 
 
->    Foo function <------".constructor"---- unnamed object
+    >    Foo function <------".constructor"---- unnamed object
 
 Most people think the '_.constructor_' means is
 constructed by. In other words the unnamed object 
