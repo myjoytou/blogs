@@ -40,9 +40,9 @@ we already have somethings, which are:
    named '.prototype'.  
   ![View Image](images/object_in_js.png)
 
-The "Object" function has been linked to the object which does not have any name.  
-On the unnamed object, we have functions like "toString" and several values  
-which are built in the language.
+The "Object" function has been linked to the object which does not  
+have any name. On the unnamed object, we have functions  
+like "toString" and several values which are built in the language.
 
 When the first line of above code gets executed following things happen:  
 1. we will have a function called "Foo"
