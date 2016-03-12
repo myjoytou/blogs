@@ -36,7 +36,7 @@ Consider the below code:
 Before anything gets executed in the above code
 we already have somethings, which are:  
 + A function called 'Object' (capital 'O').
-+ An object which does not have any name, but a label  
++ An object which does not have any name, but a label
    named '.prototype'.  
   ![View Image](images/object_in_js.png)
 
@@ -44,22 +44,22 @@ The "Object" function has been linked to the object which does not
 have any name. On the unnamed object, we have functions  
 like "toString" and several values which are built in the language.
 
-When the first line of above code gets executed following things happen:  
+When the first line of above code gets executed following things happen:
 + We will have a function called "Foo".
-+ It's also going to create an "object" that we are linked to, and it will  
-   have an arbitrary linkage named: "_.prototype_".  
-   ![View Image](images/object_in_js_foo.png)  
++ It's also going to create an "object" that we are linked to, and it will
+   have an arbitrary linkage named: "_.prototype_".
+   ![View Image](images/object_in_js_foo.png)
    >Foo func -------".prototype"-------> unnamed object
 
-+ Also the _unnamed object_ gets linked to the  
++ Also the _unnamed object_ gets linked to the
    unnamed object of the 'Object' function and this
-   linkage is labeled as '__[[Prototype]]__'.  
+   linkage is labeled as '__[[Prototype]]__'.
    ![Veiw Image](images/object_in_js_Object.png)
 + In addition to the above connection, there is
-   also a connection in the opposite direction.    
-   The _unnamed_ object has a property on the "function"  
+   also a connection in the opposite direction.
+   The _unnamed_ object has a property on the "function"
    called "_.constructor_".
-   ![View Image](images/object_in_js_const.png)  
+   ![View Image](images/object_in_js_const.png)
    >Foo function <------".constructor"---- unnamed object
 
 Most people think the '_.constructor_' means is
