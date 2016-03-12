@@ -49,12 +49,13 @@ When the first line of above code gets executed following things happen:
 2. It's also going to create an "object" that we are linked to, and it will  
    have an arbitrary linkage named: "_.prototype_".  
    ![View Image](images/object_in_js_foo.png)  
-   >Foo func -------".prototype"-------> unnamed object  
-   Also the _unnamed object_ gets linked to the  
-   unnamed object of the 'Object' function and this  
+   >Foo func -------".prototype"-------> unnamed object
+
+3. Also the _unnamed object_ gets linked to the  
+   unnamed object of the 'Object' function and this
    linkage is labeled as '__[[Prototype]]__'.  
    ![Veiw Image](images/object_in_js_Object.png)
-3. In addition to the above connection, there is  
+4. In addition to the above connection, there is
    also a connection in the opposite direction.  
    The _unnamed_ object has a property on the "function"  
    called "_.constructor_".  
