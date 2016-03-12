@@ -49,6 +49,7 @@ When the first line of above code gets executed following things happen:
 * It's also going to create an "object" that we are linked to, and it will
    have an arbitrary linkage named: "_.prototype_".
    ![View Image](images/object_in_js_foo.png)  
+   
 >    Foo func -------".prototype"-------> unnamed object
 * Also the _unnamed object_ gets linked to the
    unnamed object of the 'Object' function and this
@@ -59,6 +60,7 @@ When the first line of above code gets executed following things happen:
    The _unnamed_ object has a property on the "function"
    called "_.constructor_".
    ![View Image](images/object_in_js_const.png) 
+
 >    Foo function <------".constructor"---- unnamed object
 
 Most people think the '_.constructor_' means is
