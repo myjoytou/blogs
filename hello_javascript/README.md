@@ -49,7 +49,7 @@ When the first line of above code gets executed following things happen:
 + It's also going to create an "object" that we are linked to, and it will
    have an arbitrary linkage named: "_.prototype_".
    ![View Image](images/object_in_js_foo.png)  
-   >Foo func -------".prototype"-------> unnamed object
+  >Foo func -------".prototype"-------> unnamed object
 + Also the _unnamed object_ gets linked to the
    unnamed object of the 'Object' function and this
    linkage is labeled as '__[[Prototype]]__'.
@@ -58,8 +58,8 @@ When the first line of above code gets executed following things happen:
    also a connection in the opposite direction.
    The _unnamed_ object has a property on the "function"
    called "_.constructor_".
-   ![View Image](images/object_in_js_const.png)  
-   >Foo function <------".constructor"---- unnamed object
+   ![View Image](images/object_in_js_const.png)
+  >Foo function <------".constructor"---- unnamed object
 
 Most people think the '_.constructor_' means is
 constructed by. In other words the unnamed object 
@@ -81,7 +81,7 @@ we will have following things:
     which will have the value 'a1'.
 + We return '**this**', which gets assigned to the variable 'a1' in 
    the code. So now the name of the newly created object will 
-   be 'a1'. 
+   be 'a1'.  
    ![View Image](images/object_in_js_new.png)
 
 So when we execute '**a1.\_\_proto\_\_ === Foo.prototype**' 
